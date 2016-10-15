@@ -6,6 +6,7 @@
 //
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "ArtistsViewController.h"
 #import "Artists.h"
 #import "Network.h"
@@ -31,16 +32,17 @@
 //    [Artists get:@[@"1Xyo4u8uXC1ZmMpatF05PJ", @"2YZyLoL8N0Wb9xBt1NhZWg", @"1RyvyyTE3xzB2ZywiAwp0i"] completion:^(NSMutableArray *artists, NSError *error) {
 //            NSLog(@"%@", artists.description);
 //    }];
-//
-//
+
+
 //    [[[Artist alloc] initWithId:@"1Xyo4u8uXC1ZmMpatF05PJ"] getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
 //        NSLog(@"%@", albums.description);
 //    }];
-//    
+    
 //    [Album get:@[@"36yJ6fcaSCVsK1tybnNizj"] withCompletionHandler:^(NSMutableArray *albums, NSError *error) {
 //        NSLog(@"%@", albums.description);
 //    }];
 }
+
 
 
 #pragma mark - Navigation

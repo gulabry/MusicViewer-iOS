@@ -61,11 +61,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79AD2D511DB27DA300AA764E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A817FE0D1DB1BF7C00B728C4 = {
 			isa = PBXGroup;
 			children = (
 				A817FE181DB1BF7C00B728C4 /* SpotifyDemo */,
 				A817FE171DB1BF7C00B728C4 /* Products */,
+				79AD2D511DB27DA300AA764E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
