@@ -6,5 +6,5 @@ target 'SpotifyDemo' do
   # use_frameworks!
 
   # Pods for SpotifyDemo
-
+  pod 'pop', '~> 1.0'
 end
