@@ -15,6 +15,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSNumber *popularity;
 @property (strong, nonatomic) NSString *previewUrl;
-@property (strong, nonatomic) NSNumber *durition;
+@property (strong, nonatomic) NSNumber *durition; //in miliseconds
+@property (strong, nonatomic) NSNumber *number;
 
 @end

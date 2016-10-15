@@ -16,11 +16,11 @@
 @property (strong, nonatomic) NSString *recordLabel;
 @property (strong, nonatomic) NSNumber *popularity;
 @property (strong, nonatomic) NSDate *releaseDate;
-@property (strong, nonatomic) NSNumber *tracks;
+@property (strong, nonatomic) NSArray *tracks;                               
 
-+(instancetype)initWithAlbumId:(NSString *)albumId;
+-(instancetype)initWithAlbumId:(NSString *)albumId;
 
-+(NSMutableArray *)get:(NSArray *)albumIds withCompletionHandler:(void (^)(NSMutableArray *albums, NSError *error))completionHandler;
++(void)get:(NSArray *)albumIds withCompletionHandler:(void (^)(NSMutableArray *albums, NSError *error))completionHandler;
 
 
 @end
