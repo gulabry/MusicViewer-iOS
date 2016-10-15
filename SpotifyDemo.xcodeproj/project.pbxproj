@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79AD2D3C1DB21EEC00AA764E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D3B1DB21EEC00AA764E /* Network.m */; };
+		79AD2D401DB22F6700AA764E /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D3F1DB22F6700AA764E /* Album.m */; };
+		79AD2D431DB22F7700AA764E /* Artists.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D421DB22F7700AA764E /* Artists.m */; };
+		79AD2D461DB236B500AA764E /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D451DB236B500AA764E /* Track.m */; };
 		A817FE1B1DB1BF7C00B728C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE1A1DB1BF7C00B728C4 /* main.m */; };
 		A817FE1E1DB1BF7C00B728C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE1D1DB1BF7C00B728C4 /* AppDelegate.m */; };
-		A817FE211DB1BF7C00B728C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE201DB1BF7C00B728C4 /* ViewController.m */; };
 		A817FE241DB1BF7C00B728C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A817FE221DB1BF7C00B728C4 /* Main.storyboard */; };
 		A817FE261DB1BF7C00B728C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A817FE251DB1BF7C00B728C4 /* Assets.xcassets */; };
 		A817FE291DB1BF7C00B728C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */; };
+		A817FE361DB219E400B728C4 /* ArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE351DB219E400B728C4 /* ArtistsViewController.m */; };
+		A817FE391DB219FE00B728C4 /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE381DB219FE00B728C4 /* AlbumsViewController.m */; };
+		A817FE3C1DB21A0800B728C4 /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE3B1DB21A0800B728C4 /* TracksViewController.m */; };
+		A817FE3F1DB21A4C00B728C4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE3E1DB21A4C00B728C4 /* Artist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79AD2D3A1DB21EEC00AA764E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		79AD2D3B1DB21EEC00AA764E /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		79AD2D3D1DB2211B00AA764E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		79AD2D3E1DB22F6700AA764E /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		79AD2D3F1DB22F6700AA764E /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		79AD2D411DB22F7700AA764E /* Artists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artists.h; sourceTree = "<group>"; };
+		79AD2D421DB22F7700AA764E /* Artists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artists.m; sourceTree = "<group>"; };
+		79AD2D441DB236B500AA764E /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		79AD2D451DB236B500AA764E /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 		A817FE161DB1BF7C00B728C4 /* SpotifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A817FE1A1DB1BF7C00B728C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A817FE1C1DB1BF7C00B728C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A817FE1D1DB1BF7C00B728C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A817FE1F1DB1BF7C00B728C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A817FE201DB1BF7C00B728C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A817FE231DB1BF7C00B728C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A817FE251DB1BF7C00B728C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A817FE281DB1BF7C00B728C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A817FE2A1DB1BF7C00B728C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A817FE341DB219E400B728C4 /* ArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistsViewController.h; sourceTree = "<group>"; };
+		A817FE351DB219E400B728C4 /* ArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistsViewController.m; sourceTree = "<group>"; };
+		A817FE371DB219FE00B728C4 /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
+		A817FE381DB219FE00B728C4 /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
+		A817FE3A1DB21A0800B728C4 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
+		A817FE3B1DB21A0800B728C4 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
+		A817FE3D1DB21A4C00B728C4 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		A817FE3E1DB21A4C00B728C4 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +80,11 @@
 		A817FE181DB1BF7C00B728C4 /* SpotifyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A817FE1C1DB1BF7C00B728C4 /* AppDelegate.h */,
-				A817FE1D1DB1BF7C00B728C4 /* AppDelegate.m */,
-				A817FE1F1DB1BF7C00B728C4 /* ViewController.h */,
-				A817FE201DB1BF7C00B728C4 /* ViewController.m */,
-				A817FE221DB1BF7C00B728C4 /* Main.storyboard */,
+				A817FE301DB2195100B728C4 /* Model */,
+				A817FE321DB2196200B728C4 /* Controllers */,
+				A817FE311DB2195900B728C4 /* Views */,
+				A817FE331DB2196C00B728C4 /* Libs */,
 				A817FE251DB1BF7C00B728C4 /* Assets.xcassets */,
-				A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */,
-				A817FE2A1DB1BF7C00B728C4 /* Info.plist */,
 				A817FE191DB1BF7C00B728C4 /* Supporting Files */,
 			);
 			path = SpotifyDemo;
@@ -74,9 +93,59 @@
 		A817FE191DB1BF7C00B728C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				79AD2D3D1DB2211B00AA764E /* Constants.h */,
+				A817FE2A1DB1BF7C00B728C4 /* Info.plist */,
+				A817FE1C1DB1BF7C00B728C4 /* AppDelegate.h */,
+				A817FE1D1DB1BF7C00B728C4 /* AppDelegate.m */,
 				A817FE1A1DB1BF7C00B728C4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A817FE301DB2195100B728C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79AD2D3A1DB21EEC00AA764E /* Network.h */,
+				79AD2D3B1DB21EEC00AA764E /* Network.m */,
+				A817FE3D1DB21A4C00B728C4 /* Artist.h */,
+				A817FE3E1DB21A4C00B728C4 /* Artist.m */,
+				79AD2D441DB236B500AA764E /* Track.h */,
+				79AD2D451DB236B500AA764E /* Track.m */,
+				79AD2D411DB22F7700AA764E /* Artists.h */,
+				79AD2D421DB22F7700AA764E /* Artists.m */,
+				79AD2D3E1DB22F6700AA764E /* Album.h */,
+				79AD2D3F1DB22F6700AA764E /* Album.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A817FE311DB2195900B728C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A817FE221DB1BF7C00B728C4 /* Main.storyboard */,
+				A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A817FE321DB2196200B728C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A817FE341DB219E400B728C4 /* ArtistsViewController.h */,
+				A817FE351DB219E400B728C4 /* ArtistsViewController.m */,
+				A817FE371DB219FE00B728C4 /* AlbumsViewController.h */,
+				A817FE381DB219FE00B728C4 /* AlbumsViewController.m */,
+				A817FE3A1DB21A0800B728C4 /* TracksViewController.h */,
+				A817FE3B1DB21A0800B728C4 /* TracksViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A817FE331DB2196C00B728C4 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A817FE211DB1BF7C00B728C4 /* ViewController.m in Sources */,
+				A817FE391DB219FE00B728C4 /* AlbumsViewController.m in Sources */,
 				A817FE1E1DB1BF7C00B728C4 /* AppDelegate.m in Sources */,
+				79AD2D431DB22F7700AA764E /* Artists.m in Sources */,
+				79AD2D461DB236B500AA764E /* Track.m in Sources */,
+				A817FE361DB219E400B728C4 /* ArtistsViewController.m in Sources */,
+				79AD2D401DB22F6700AA764E /* Album.m in Sources */,
+				A817FE3C1DB21A0800B728C4 /* TracksViewController.m in Sources */,
+				A817FE3F1DB21A4C00B728C4 /* Artist.m in Sources */,
+				79AD2D3C1DB21EEC00AA764E /* Network.m in Sources */,
 				A817FE1B1DB1BF7C00B728C4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +387,7 @@
 				A817FE2F1DB1BF7C00B728C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
