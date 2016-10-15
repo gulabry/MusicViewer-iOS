@@ -18,9 +18,10 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSNumber *popularity;
 @property (strong, nonatomic) NSArray *albums;
+@property (strong, nonatomic) NSNumber *totalAlbums;
 
-+(instancetype)initWithId:(NSString *)artistSpotifyId;
+-(instancetype)initWithId:(NSString *)artistSpotifyId;
 
--(NSArray *)getAlbums;
+-(void)getAlbumsWithCompletionHandler:(void (^)(NSMutableArray *albums, NSError *error))completionHandler;
 
 @end

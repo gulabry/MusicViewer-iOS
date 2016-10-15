@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Album : NSObject
-
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *spotifyUrl;
 @property (strong, nonatomic) NSString *spotifyId;
 @property (strong, nonatomic) NSArray *imageUrls;
@@ -18,6 +18,9 @@
 @property (strong, nonatomic) NSDate *releaseDate;
 @property (strong, nonatomic) NSNumber *tracks;
 
-+(instancetype)get:(NSString *)albumId;
++(instancetype)initWithAlbumId:(NSString *)albumId;
+
++(NSMutableArray *)get:(NSArray *)albumIds withCompletionHandler:(void (^)(NSMutableArray *albums, NSError *error))completionHandler;
+
 
 @end

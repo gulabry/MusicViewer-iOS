@@ -7,6 +7,8 @@
 //
 
 #import "ArtistsViewController.h"
+#import "Artists.h"
+#import "Network.h"
 
 @interface ArtistsViewController ()
 
@@ -16,7 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+//    [Network sharedInstance];
+//    [Artists getRelatedTo:[Artists sharedInstance].drake completion:^(NSMutableArray *artists, NSError *error) {
+//        NSLog(@"%@", artists.description);
+//    }];
+    
+//    [Artists get:@[@"1Xyo4u8uXC1ZmMpatF05PJ", @"2YZyLoL8N0Wb9xBt1NhZWg", @"1RyvyyTE3xzB2ZywiAwp0i"] completion:^(NSMutableArray *artists, NSError *error) {
+//            NSLog(@"%@", artists.description);
+//    }];
+
+
+//    [[[Artist alloc] initWithId:@"1Xyo4u8uXC1ZmMpatF05PJ"] getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
+//        NSLog(@"%@", albums.description);
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {

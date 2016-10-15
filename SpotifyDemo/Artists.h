@@ -11,14 +11,12 @@
 
 @interface Artists : NSObject
 
-@property (strong, nonatomic) NSArray *related;
-@property (strong, nonatomic) NSArray *all;
-
 @property (strong, nonatomic) Artist *drake;
 
 +(instancetype)sharedInstance;
 
--(void)relatedTo:(Artist *)artist;
--(NSArray *)get:(NSArray *)artistIds;
++(void)getRelatedTo:(Artist *)artist completion:(void (^)(NSMutableArray *artists, NSError *error))completionHandler;
+
++(void)get:(NSArray *)artistIds completion:(void (^)(NSMutableArray *artists, NSError *error))completionHandler;
 
 @end
