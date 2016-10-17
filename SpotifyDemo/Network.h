@@ -15,4 +15,6 @@
 
 +(instancetype)sharedInstance;
 
++(void)cancelCurrentTasks;
+
 @end

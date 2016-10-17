@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVWebViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>pop.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>69E7CE268E76424C9C2C2011361CB363</key>
+		<key>3B23271629814F8DA3F9C9B8D54CD99F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6B1636BEB8C839337C57288324F36B6</key>
+		<key>7F0D9BF1B70CC9EB73FB51DFCAA18AA7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAD2506AA419EF2A25C38BEBB96A7AC6</key>
+		<key>9F0BD0419730DA49B156D3FE95BB6292</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1F4607030895FA4DEBCAAE3104BC5AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

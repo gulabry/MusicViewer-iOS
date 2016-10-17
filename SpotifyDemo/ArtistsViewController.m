@@ -38,11 +38,6 @@
         });
     }];
 
-//    [Artists get:@[@"1Xyo4u8uXC1ZmMpatF05PJ", @"2YZyLoL8N0Wb9xBt1NhZWg", @"1RyvyyTE3xzB2ZywiAwp0i"] completion:^(NSMutableArray *artists, NSError *error) {
-//            NSLog(@"%@", artists.description);
-//    }];
-
-
 //    [[[Artist alloc] initWithId:@"1Xyo4u8uXC1ZmMpatF05PJ"] getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
 //        NSLog(@"%@", albums.description);
 //    }];
@@ -59,6 +54,7 @@
 
 -(void)viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [Network cancelCurrentTasks];
 }
 
 #pragma mark - CollectionView
@@ -110,6 +106,7 @@
         NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
         NSInteger index = indexPath.section * 2 + indexPath.row + 1;
         vc.artist = self.artists[index];
+        vc.artistImage = cell.albumImageView.image;
     }
 }
 

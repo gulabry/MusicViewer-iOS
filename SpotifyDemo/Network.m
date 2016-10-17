@@ -22,4 +22,12 @@
     return network;
 }
 
++(void)cancelCurrentTasks {
+    [[Network sharedInstance].session getAllTasksWithCompletionHandler:^(NSArray<__kindof NSURLSessionTask *> * _Nonnull tasks) {
+        for (id task in tasks) {
+            [task cancel];
+        }
+    }];
+}
+
 @end

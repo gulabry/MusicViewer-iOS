@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Artist.h"
 
-@interface AlbumsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate>
-//UITableViewDelegate, UITableViewDataSource>
+@interface AlbumsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) Artist *artist;
-
+@property (weak, nonatomic) IBOutlet UIImageView *artistImageView;
+@property (strong, nonatomic) UIImage *artistImage;
 @end

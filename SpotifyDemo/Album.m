@@ -29,7 +29,7 @@
 
 +(void)get:(NSArray *)albumIds withCompletionHandler:(void (^)(NSMutableArray *albums, NSError *error))completionHandler {
     
-    NSMutableString *albumsUrl = [self combineArrayIntoCommaSeperatedString:albumIds];
+    NSMutableString *albumsUrl = albumIds[0];//[self combineArrayIntoCommaSeperatedString:albumIds];
     
     NSString *getAlbumsUrl = [NSString stringWithFormat:@"%@%@%@",baseEndpoint, @"albums?ids=", albumsUrl];
     

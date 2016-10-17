@@ -3,15 +3,27 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SVWebViewController (1.0)
 
 DEPENDENCIES:
   - pop (~> 1.0)
   - SDWebImage (~> 3.8)
+  - SVWebViewController (from `https://github.com/TransitApp/SVWebViewController.git`)
+
+EXTERNAL SOURCES:
+  SVWebViewController:
+    :git: https://github.com/TransitApp/SVWebViewController.git
+
+CHECKOUT OPTIONS:
+  SVWebViewController:
+    :commit: 9abad6b852b6c2ad19bb3c28532cce53719e2a7f
+    :git: https://github.com/TransitApp/SVWebViewController.git
 
 SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVWebViewController: aa2e18a41ff5f45be7aeec8e92ca5bcc50b5ebb1
 
-PODFILE CHECKSUM: bfc65c958b6393cf9576890785b77468de2d2e9f
+PODFILE CHECKSUM: 224e88cd98116da28f67397586e793c189768671
 
 COCOAPODS: 1.1.0.rc.2
