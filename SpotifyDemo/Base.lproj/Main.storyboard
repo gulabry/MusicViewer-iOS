@@ -53,8 +53,10 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OLf-6x-CWh">
-                                                    <frame key="frameInset" width="173" height="110"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="OLf-6x-CWh">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="110" id="T8j-E0-KP2"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTe-JZ-yfp">
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -75,6 +77,7 @@
                                             <constraint firstAttribute="trailingMargin" secondItem="OLf-6x-CWh" secondAttribute="trailing" constant="-8" id="Zcl-Fb-mdN"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="fij-I2-RTQ" secondAttribute="bottom" id="dJa-V6-0N9"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="MTe-JZ-yfp" secondAttribute="leading" id="fQt-xo-vvR"/>
+                                            <constraint firstItem="OLf-6x-CWh" firstAttribute="centerX" secondItem="qxx-ah-rCO" secondAttribute="centerX" id="iyS-f9-5ej"/>
                                             <constraint firstAttribute="leadingMargin" secondItem="Qb9-UO-qmJ" secondAttribute="leading" id="mPA-dW-nKw"/>
                                         </constraints>
                                     </collectionViewCell>
