@@ -117,6 +117,18 @@
     
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    AlbumCollectionViewCell *cell = (AlbumCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.darkenView.alpha = 0.0;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didUnhighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    AlbumCollectionViewCell *cell = (AlbumCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.darkenView.alpha = 1.0;
+}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
