@@ -56,9 +56,7 @@
     [self setupView];
     
     [self.artist getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
-        for (Album *album in albums) {
-            NSLog(album.name);
-        }
+
         dispatch_async(dispatch_get_main_queue(), ^{
             self.albums = albums;
             [self.collectionView reloadData];
@@ -69,6 +67,7 @@
 }
 
 -(void)setupView {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
     self.artistLabel.text = self.artist.name;
     NSMutableArray *mutableGenres= [self.artist.genres mutableCopy];
 

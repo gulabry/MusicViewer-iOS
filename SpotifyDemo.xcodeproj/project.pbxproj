@@ -22,7 +22,6 @@
 		A817FE291DB1BF7C00B728C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */; };
 		A817FE361DB219E400B728C4 /* ArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE351DB219E400B728C4 /* ArtistsViewController.m */; };
 		A817FE391DB219FE00B728C4 /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE381DB219FE00B728C4 /* AlbumsViewController.m */; };
-		A817FE3C1DB21A0800B728C4 /* TracksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE3B1DB21A0800B728C4 /* TracksViewController.m */; };
 		A817FE3F1DB21A4C00B728C4 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE3E1DB21A4C00B728C4 /* Artist.m */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +55,6 @@
 		A817FE351DB219E400B728C4 /* ArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistsViewController.m; sourceTree = "<group>"; };
 		A817FE371DB219FE00B728C4 /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumsViewController.h; sourceTree = "<group>"; };
 		A817FE381DB219FE00B728C4 /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumsViewController.m; sourceTree = "<group>"; };
-		A817FE3A1DB21A0800B728C4 /* TracksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TracksViewController.h; sourceTree = "<group>"; };
-		A817FE3B1DB21A0800B728C4 /* TracksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TracksViewController.m; sourceTree = "<group>"; };
 		A817FE3D1DB21A4C00B728C4 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		A817FE3E1DB21A4C00B728C4 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		F4D2066A7A139093C7B3C311 /* libPods-SpotifyDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SpotifyDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,8 +171,6 @@
 				A817FE351DB219E400B728C4 /* ArtistsViewController.m */,
 				A817FE371DB219FE00B728C4 /* AlbumsViewController.h */,
 				A817FE381DB219FE00B728C4 /* AlbumsViewController.m */,
-				A817FE3A1DB21A0800B728C4 /* TracksViewController.h */,
-				A817FE3B1DB21A0800B728C4 /* TracksViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -317,7 +312,6 @@
 				A817FE361DB219E400B728C4 /* ArtistsViewController.m in Sources */,
 				79AD2D401DB22F6700AA764E /* Album.m in Sources */,
 				79B9ACF61DB4DD7C00D67AE8 /* TrackTableViewCell.m in Sources */,
-				A817FE3C1DB21A0800B728C4 /* TracksViewController.m in Sources */,
 				A817FE3F1DB21A4C00B728C4 /* Artist.m in Sources */,
 				79C39B8A1DB4608100AA0A11 /* ArtistCollectionViewCell.m in Sources */,
 				79AD2D3C1DB21EEC00AA764E /* Network.m in Sources */,
