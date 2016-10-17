@@ -212,7 +212,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Kanye West" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-i6-OJj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Kanye West" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-i6-OJj">
                                 <frame key="frameInset" minX="7" minY="234" width="133" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
@@ -251,38 +251,14 @@
                                     <constraint firstItem="T2p-Xr-ygG" firstAttribute="leading" secondItem="S9X-Iv-7Yv" secondAttribute="leading" constant="8" id="Wf4-dN-u3h"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-zm-vJS">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="59z-au-tyR"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cYd-K6-am6">
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="wg8-8V-h7a"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4T-VM-2y8">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="7Lu-dW-Nqc"/>
-                                    <constraint firstAttribute="width" secondItem="v4T-VM-2y8" secondAttribute="height" multiplier="1:1" id="RyU-mw-gIa"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="TNE-Yz-AIa"/>
-                                </constraints>
-                                <state key="normal" image="play"/>
-                                <connections>
-                                    <action selector="playArtist:" destination="qxx-ah-rCO" eventType="touchUpInside" id="nZy-jV-V7A"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="3.2M Followers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-7f-5oZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="3.2M Followers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YzE-7f-5oZ">
                                 <frame key="frameInset" minX="7" minY="291" width="96" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Rap, Pop, R&amp;B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IF-FG-3sc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Rap, Pop, R&amp;B" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1IF-FG-3sc">
                                 <frame key="frameInset" minX="9" minY="269" width="92" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
@@ -292,25 +268,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.086274509799999996" green="0.1843137255" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Egg-zm-vJS" secondAttribute="trailing" id="2Gl-1y-lfR"/>
-                            <constraint firstItem="cYd-K6-am6" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" id="4I2-6v-8Rx"/>
                             <constraint firstItem="IcN-Pl-quK" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" id="6hn-WJ-m8t"/>
                             <constraint firstItem="S9X-Iv-7Yv" firstAttribute="centerY" secondItem="dmE-T0-Eu5" secondAttribute="centerY" id="6w7-m8-5xL"/>
                             <constraint firstAttribute="trailing" secondItem="S9X-Iv-7Yv" secondAttribute="trailing" id="9cy-0g-uNQ"/>
                             <constraint firstItem="dmE-T0-Eu5" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" id="MOQ-dM-r9X"/>
-                            <constraint firstAttribute="trailing" secondItem="cYd-K6-am6" secondAttribute="trailing" id="MOi-yF-uth"/>
-                            <constraint firstItem="Egg-zm-vJS" firstAttribute="top" secondItem="cYd-K6-am6" secondAttribute="bottom" constant="11" id="NHa-11-qbY"/>
                             <constraint firstAttribute="trailing" secondItem="ess-G9-h1A" secondAttribute="trailing" constant="-4" id="OFv-Fn-W5a"/>
                             <constraint firstAttribute="topMargin" secondItem="IcN-Pl-quK" secondAttribute="top" id="RHO-kn-TPY"/>
                             <constraint firstItem="HrX-bc-nsr" firstAttribute="top" secondItem="ess-G9-h1A" secondAttribute="bottom" id="Ul1-qy-YfT"/>
                             <constraint firstItem="ess-G9-h1A" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" constant="-4" id="ZPG-av-yAC"/>
                             <constraint firstItem="ess-G9-h1A" firstAttribute="top" secondItem="IcN-Pl-quK" secondAttribute="bottom" constant="200" id="aRU-ro-lcG"/>
-                            <constraint firstItem="v4T-VM-2y8" firstAttribute="width" secondItem="v4T-VM-2y8" secondAttribute="height" multiplier="1:1" id="gpY-Ul-RFh"/>
-                            <constraint firstItem="Egg-zm-vJS" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" id="ja1-3z-RVb"/>
                             <constraint firstItem="S9X-Iv-7Yv" firstAttribute="top" secondItem="IcN-Pl-quK" secondAttribute="bottom" id="kGD-b0-pjB"/>
                             <constraint firstItem="dmE-T0-Eu5" firstAttribute="top" secondItem="IcN-Pl-quK" secondAttribute="bottom" id="kya-ar-riQ"/>
                             <constraint firstAttribute="trailing" secondItem="IcN-Pl-quK" secondAttribute="trailing" id="uYE-og-PYe"/>
-                            <constraint firstItem="he9-Fw-HO3" firstAttribute="top" secondItem="Egg-zm-vJS" secondAttribute="bottom" constant="5" id="wgd-dY-q3A"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
