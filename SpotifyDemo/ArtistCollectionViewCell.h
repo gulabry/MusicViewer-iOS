@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *genreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *followersLabel;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activitySpinner;
 - (IBAction)playArtist:(id)sender;
 
 @end

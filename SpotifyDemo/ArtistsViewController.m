@@ -7,6 +7,7 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "ArtistsViewController.h"
 #import "Artists.h"
 #import "Network.h"
@@ -67,7 +68,7 @@
         NSString *shortenedFollowers = (artist.followers.intValue >= 1000000) ? [NSString stringWithFormat:@"%dM Followers", artist.followers.intValue / 1000000] : [NSString stringWithFormat:@"%@ Followers", artist.followers];
         cell.followersLabel.text = shortenedFollowers;
         cell.albumImageView.contentMode = UIViewContentModeScaleAspectFill;
-
+        [cell.albumImageView sd_setImageWithURL:[NSURL URLWithString:artist.imageUrls[0]] placeholderImage:[UIImage imageNamed:@"note"]];
     }
     
     return cell;

@@ -1,12 +1,17 @@
 PODS:
   - pop (1.0.9)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
   - pop (~> 1.0)
+  - SDWebImage (~> 3.8)
 
 SPEC CHECKSUMS:
   pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: e2768cefd43e0bf0f8955de97772f8116cd15612
+PODFILE CHECKSUM: bfc65c958b6393cf9576890785b77468de2d2e9f
 
 COCOAPODS: 1.1.0.rc.2

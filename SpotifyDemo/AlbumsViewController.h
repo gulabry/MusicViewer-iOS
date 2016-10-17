@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Artist.h"
 
 @interface AlbumsViewController : UIViewController
+
+@property (strong, nonatomic) Artist *artist;
 
 @end
