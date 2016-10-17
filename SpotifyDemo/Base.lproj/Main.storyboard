@@ -155,9 +155,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Eun-cj-Jwj">
-                                <frame key="frameInset" minX="169" minY="315" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Eun-cj-Jwj">
                                 <color key="color" red="0.81718711119999998" green="0.81718711119999998" blue="0.81718711119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pablo" translatesAutoresizingMaskIntoConstraints="NO" id="IcN-Pl-quK">
@@ -283,7 +281,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" image="pablo" translatesAutoresizingMaskIntoConstraints="NO" id="paL-XH-Nfp"/>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="938-4t-2ak">
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WAI-BA-mtq">
-                                    <frame key="frameInset" maxX="-1"/>
+                                    <frame key="frameInset"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="light"/>
@@ -361,6 +359,7 @@
                         <color key="backgroundColor" red="0.086274509799999996" green="0.1843137255" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="HrX-bc-nsr" firstAttribute="top" secondItem="Z1d-gA-EiP" secondAttribute="bottom" constant="30" id="2Es-j7-Bvh"/>
+                            <constraint firstItem="Eun-cj-Jwj" firstAttribute="centerX" secondItem="2pa-50-ZaT" secondAttribute="centerXWithinMargins" id="3xb-T2-Gtp"/>
                             <constraint firstAttribute="trailing" secondItem="S9X-Iv-7Yv" secondAttribute="trailing" id="4a1-2a-zeK"/>
                             <constraint firstItem="IcN-Pl-quK" firstAttribute="leading" secondItem="2pa-50-ZaT" secondAttribute="leading" id="6hn-WJ-m8t"/>
                             <constraint firstItem="k7c-VS-agB" firstAttribute="centerY" secondItem="naQ-i6-OJj" secondAttribute="centerY" id="72a-yU-oH6"/>
@@ -369,6 +368,7 @@
                             <constraint firstItem="HrX-bc-nsr" firstAttribute="top" secondItem="qQ6-zu-ld6" secondAttribute="bottom" id="D6Y-BI-ONe"/>
                             <constraint firstAttribute="trailing" secondItem="paL-XH-Nfp" secondAttribute="trailing" id="Dbm-sR-eI2"/>
                             <constraint firstItem="MdE-Cb-kGf" firstAttribute="top" secondItem="Z1d-gA-EiP" secondAttribute="bottom" constant="4" id="HCX-Uh-mWa"/>
+                            <constraint firstItem="Eun-cj-Jwj" firstAttribute="top" secondItem="YzE-7f-5oZ" secondAttribute="bottom" constant="20" id="OAx-0p-vuY"/>
                             <constraint firstAttribute="trailing" secondItem="ess-G9-h1A" secondAttribute="trailing" id="OFv-Fn-W5a"/>
                             <constraint firstAttribute="topMargin" secondItem="IcN-Pl-quK" secondAttribute="top" id="RHO-kn-TPY"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="1IF-FG-3sc" secondAttribute="trailing" constant="8" id="S6a-5I-nPJ"/>

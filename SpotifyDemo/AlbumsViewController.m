@@ -62,7 +62,14 @@
 
 -(void)setupView {
     self.artistLabel.text = self.artist.name;
-    self.genreLabel.text = [[self.artist.genres componentsJoinedByString:@", " ] capitalizedString];
+    NSMutableArray *mutableGenres= [self.artist.genres mutableCopy];
+    
+    //  more than 4 genre labels is too much for the screen
+    if (mutableGenres.count - 1 > 5) {
+        [mutableGenres removeObjectsInRange:NSMakeRange(4, mutableGenres.count - 1)];
+    }
+    
+    self.genreLabel.text = [[mutableGenres componentsJoinedByString:@", " ] capitalizedString];
     NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
     [fmt setNumberStyle:NSNumberFormatterDecimalStyle]; // to get commas (or locale equivalent)
     [fmt setMaximumFractionDigits:0]; // to avoid any decimal
@@ -112,6 +119,7 @@
         self.albumImageView.hidden = NO;
         self.albumVisualEffectView.hidden = NO;
         self.closeAlbumViewButton.hidden = NO;
+        self.closeLabel.hidden = NO;
         self.closeAlbumViewButton.layer.cornerRadius = self.closeAlbumViewButton.frame.size.width / 2;
         self.closeAlbumViewButton.backgroundColor = [UIColor whiteColor];
         self.closeAlbumViewButton.layer.masksToBounds = YES;
@@ -176,7 +184,6 @@
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     AlbumCollectionViewCell *cell = (AlbumCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.darkenView.alpha = 0.0;
     [self moveCollectionViewToShowAlbumTracks];
     
     NSInteger index = indexPath.section * 2 + indexPath.row + 1;
@@ -252,7 +259,7 @@
     self.collectionViewTopConstraint.constant = 110 + height;
     self.collectionViewBottomConstraint.constant = -height;
 
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.9 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:0.8 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [UIView animateWithDuration:1 animations:^{
             [self.view layoutIfNeeded];
         }];
