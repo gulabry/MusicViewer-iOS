@@ -11,6 +11,7 @@
 		79AD2D401DB22F6700AA764E /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D3F1DB22F6700AA764E /* Album.m */; };
 		79AD2D431DB22F7700AA764E /* Artists.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D421DB22F7700AA764E /* Artists.m */; };
 		79AD2D461DB236B500AA764E /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D451DB236B500AA764E /* Track.m */; };
+		79C39B8A1DB4608100AA0A11 /* ArtistCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C39B891DB4608100AA0A11 /* ArtistCollectionViewCell.m */; };
 		A17E62A9E2A088A3FFA45B69 /* libPods-SpotifyDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4D2066A7A139093C7B3C311 /* libPods-SpotifyDemo.a */; };
 		A817FE1B1DB1BF7C00B728C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE1A1DB1BF7C00B728C4 /* main.m */; };
 		A817FE1E1DB1BF7C00B728C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A817FE1D1DB1BF7C00B728C4 /* AppDelegate.m */; };
@@ -34,6 +35,8 @@
 		79AD2D421DB22F7700AA764E /* Artists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artists.m; sourceTree = "<group>"; };
 		79AD2D441DB236B500AA764E /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
 		79AD2D451DB236B500AA764E /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		79C39B881DB4608100AA0A11 /* ArtistCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistCollectionViewCell.h; sourceTree = "<group>"; };
+		79C39B891DB4608100AA0A11 /* ArtistCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistCollectionViewCell.m; sourceTree = "<group>"; };
 		8E0838B1305024536C2E6194 /* Pods-SpotifyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifyDemo/Pods-SpotifyDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A817FE161DB1BF7C00B728C4 /* SpotifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A817FE1A1DB1BF7C00B728C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 		A817FE311DB2195900B728C4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79C39B881DB4608100AA0A11 /* ArtistCollectionViewCell.h */,
+				79C39B891DB4608100AA0A11 /* ArtistCollectionViewCell.m */,
 				A817FE221DB1BF7C00B728C4 /* Main.storyboard */,
 				A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */,
 			);
@@ -302,6 +307,7 @@
 				79AD2D401DB22F6700AA764E /* Album.m in Sources */,
 				A817FE3C1DB21A0800B728C4 /* TracksViewController.m in Sources */,
 				A817FE3F1DB21A4C00B728C4 /* Artist.m in Sources */,
+				79C39B8A1DB4608100AA0A11 /* ArtistCollectionViewCell.m in Sources */,
 				79AD2D3C1DB21EEC00AA764E /* Network.m in Sources */,
 				A817FE1B1DB1BF7C00B728C4 /* main.m in Sources */,
 			);
@@ -347,6 +353,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,6 +402,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

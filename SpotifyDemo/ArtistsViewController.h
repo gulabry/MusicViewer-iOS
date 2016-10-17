@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ArtistsViewController : UIViewController {
+@interface ArtistsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource> {
 
 }
 
