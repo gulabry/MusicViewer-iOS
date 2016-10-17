@@ -7,4 +7,5 @@ target 'SpotifyDemo' do
 
   # Pods for SpotifyDemo
   pod 'pop', '~> 1.0'
+  pod 'SDWebImage', '~>3.8'
 end
