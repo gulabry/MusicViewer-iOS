@@ -37,14 +37,6 @@
             [self.loadingSpinner stopAnimating];
         });
     }];
-
-//    [[[Artist alloc] initWithId:@"1Xyo4u8uXC1ZmMpatF05PJ"] getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
-//        NSLog(@"%@", albums.description);
-//    }];
-    
-//    [Album get:@[@"36yJ6fcaSCVsK1tybnNizj"] withCompletionHandler:^(NSMutableArray *albums, NSError *error) {
-//        NSLog(@"%@", albums.description);
-//    }];
 }
 
 
@@ -84,10 +76,6 @@
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return self.artists.count / 2;
-}
-
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView

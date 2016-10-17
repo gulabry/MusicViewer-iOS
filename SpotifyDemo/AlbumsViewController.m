@@ -14,11 +14,14 @@
 #import "TrackTableViewCell.h"
 #import "Track.h"
 #import "Album.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AlbumsViewController ()
 
 @property (strong, nonatomic) NSArray *albums;
 @property (strong, nonatomic) Album *selectedAlbum;
+@property (strong, nonatomic) AVPlayer *songPlayer;
+@property (nonatomic) BOOL isPlaying;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingSpinning;
@@ -31,6 +34,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *closeAlbumViewButton;
 @property (weak, nonatomic) IBOutlet UILabel *closeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *albumImageView;
+@property (weak, nonatomic) IBOutlet UIView *playerView;
+@property (weak, nonatomic) IBOutlet UILabel *playingTrackLabel;
+@property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (weak, nonatomic) IBOutlet UIVisualEffectView *albumVisualEffectView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewTopConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewBottomConstraint;
@@ -50,7 +56,9 @@
     [self setupView];
     
     [self.artist getAlbumsWithCompletionHandler:^(NSMutableArray *albums, NSError *error) {
-        NSLog(@"%@", albums.description);
+        for (Album *album in albums) {
+            NSLog(album.name);
+        }
         dispatch_async(dispatch_get_main_queue(), ^{
             self.albums = albums;
             [self.collectionView reloadData];
@@ -86,6 +94,8 @@
     self.closeAlbumViewButton.alpha = 0.0;
     self.closeLabel.hidden = YES;
     self.closeLabel.alpha = 0.0;
+    self.playerView.hidden = YES;
+    self.playerView.alpha = 0.0;
 }
 
 -(void)setupViewAfterAlbumsLoaded {
@@ -120,6 +130,7 @@
         self.albumVisualEffectView.hidden = NO;
         self.closeAlbumViewButton.hidden = NO;
         self.closeLabel.hidden = NO;
+        self.playerView.hidden = NO;
         self.closeAlbumViewButton.layer.cornerRadius = self.closeAlbumViewButton.frame.size.width / 2;
         self.closeAlbumViewButton.backgroundColor = [UIColor whiteColor];
         self.closeAlbumViewButton.layer.masksToBounds = YES;
@@ -130,6 +141,7 @@
             self.albumVisualEffectView.alpha = 1.0;
             self.closeAlbumViewButton.alpha = 1.0;
             self.closeLabel.alpha = 1.0;
+            self.playerView.alpha = 1.0;
         }];
     });
 }
@@ -142,12 +154,14 @@
             self.albumVisualEffectView.alpha = 0.0;
             self.closeAlbumViewButton.alpha = 0.0;
             self.closeLabel.alpha = 0.0;
+            self.playerView.alpha = 0.0;
         } completion:^(BOOL finished) {
             self.tableView.hidden = YES;
             self.albumImageView.hidden = YES;
             self.albumVisualEffectView.hidden = YES;
             self.closeAlbumViewButton.hidden = YES;
             self.closeLabel.hidden = YES;
+            self.playerView.hidden = YES;
         }];
     });
 }
@@ -223,7 +237,7 @@
     Track *track = self.selectedAlbum.tracks[indexPath.row];
     
     cell.titleLabel.text = track.name;
-    cell.durationLabel.text = [self getTimeStringFromSeconds:[track.durition doubleValue] / 1000.0];
+    cell.durationLabel.text = [self getTimeStringFromSeconds:([track.durition doubleValue] / 100.0)];
     if (track.isExplicit) {
         cell.explicitLabel.layer.cornerRadius = cell.explicitLabel.frame.size.width / 2;
         cell.explicitLabel.backgroundColor = [UIColor darkGrayColor];
@@ -249,10 +263,28 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    self.isPlaying = YES;
+    Track *selectedTrack = self.selectedAlbum.tracks[indexPath.row];
+    [self playSongFromURLString:selectedTrack.previewUrl];
+    self.playingTrackLabel.text = selectedTrack.name;
 }
 
 #pragma mark - Animation
+
+-(void)playSongFromURLString:(NSString *)urlString {
+    self.songPlayer = [[AVPlayer alloc] initWithURL:[NSURL URLWithString:urlString]];
+    [self.songPlayer play];
+}
+- (IBAction)pause:(id)sender {
+    if (self.isPlaying) {
+        [self.songPlayer pause];
+        [self.playButton setImage:[UIImage imageNamed:@"play2"] forState:UIControlStateNormal];
+    } else {
+        [self.songPlayer play];
+        [self.playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
+    }
+}
 
 -(void)moveCollectionViewToShowAlbumTracks {
     CGFloat height = self.collectionView.frame.size.height;
