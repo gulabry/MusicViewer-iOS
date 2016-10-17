@@ -38,7 +38,7 @@
         
         if (completionHandler == nil) return;
         
-        if (error) {
+        if (error || data == nil) {
             completionHandler(nil, error);
             return;
         } else if (convertError) {
@@ -81,7 +81,7 @@
         
         if (completionHandler == nil) return;
         
-        if (error) {
+        if (error || data == nil) {
             completionHandler(nil, error);
             return;
         }
@@ -91,7 +91,7 @@
         completionHandler(artists, nil);
     }];
     [task resume];
-    [[Network sharedInstance].session finishTasksAndInvalidate];
+    //[[Network sharedInstance].session finishTasksAndInvalidate];
 }
 
 +(NSMutableString *)combineArrayIntoCommaSeperatedString:(NSArray *)array {

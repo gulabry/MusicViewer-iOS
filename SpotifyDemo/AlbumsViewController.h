@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Artist.h"
 
-@interface AlbumsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface AlbumsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UIGestureRecognizerDelegate>
 //UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) Artist *artist;

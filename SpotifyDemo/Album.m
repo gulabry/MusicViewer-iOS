@@ -44,7 +44,7 @@
         
         if (completionHandler == nil) return;
         
-        if (error) {
+        if (error || data == nil) {
             completionHandler(nil, error);
             return;
         } else if (convertError) {
@@ -56,7 +56,6 @@
         completionHandler(albums, nil);
     }];
     [task resume];
-    [[Network sharedInstance].session finishTasksAndInvalidate];
 }
 
 +(NSMutableArray *)marshallAlbumInfoFromDictionary:(NSDictionary *)dict {

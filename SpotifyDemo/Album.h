@@ -16,7 +16,8 @@
 @property (strong, nonatomic) NSString *recordLabel;
 @property (strong, nonatomic) NSNumber *popularity;
 @property (strong, nonatomic) NSDate *releaseDate;
-@property (strong, nonatomic) NSArray *tracks;                               
+@property (strong, nonatomic) NSArray *tracks;
+@property (nonatomic) BOOL isExplicit;
 
 -(instancetype)initWithAlbumId:(NSString *)albumId;
 

@@ -8,6 +8,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "AlbumsViewController.h"
 #import "ArtistsViewController.h"
 #import "Artists.h"
 #import "Network.h"
@@ -26,10 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    
     [Artists getRelatedTo:[Artists sharedInstance].drake completion:^(NSMutableArray *artists, NSError *error) {
         NSLog(@"%@", artists.description);
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -53,7 +52,16 @@
 //    }];
 }
 
-#pragma mark - CollectionView 
+
+-(void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
+#pragma mark - CollectionView
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     ArtistCollectionViewCell *cell = (ArtistCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"artistCell" forIndexPath:indexPath];
@@ -96,8 +104,13 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showAlbums"]) {
+        AlbumsViewController *vc = [segue destinationViewController];
+        ArtistCollectionViewCell *cell = (ArtistCollectionViewCell*)sender;
+        NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+        NSInteger index = indexPath.section * 2 + indexPath.row + 1;
+        vc.artist = self.artists[index];
+    }
 }
 
 #pragma mark - Helper Functions

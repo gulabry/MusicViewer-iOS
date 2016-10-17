@@ -17,7 +17,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         network = [[Network alloc] init];
-        network.session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        network.session = [NSURLSession sharedSession];
     });
     return network;
 }
