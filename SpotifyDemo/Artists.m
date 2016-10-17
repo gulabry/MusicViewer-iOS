@@ -50,7 +50,7 @@
         completionHandler(relatedArtists, nil);
     }];
     [task resume];
-    [[Network sharedInstance].session finishTasksAndInvalidate];
+    //[[Network sharedInstance].session finishTasksAndInvalidate];
 }
 
 +(void)get:(NSArray *)artistIds completion:(void (^)(NSMutableArray *artists, NSError *error))completionHandler {

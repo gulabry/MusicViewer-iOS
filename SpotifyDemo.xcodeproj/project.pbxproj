@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79A2B8E11DB48E2800BD709C /* AlbumCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A2B8E01DB48E2800BD709C /* AlbumCollectionViewCell.m */; };
 		79AD2D3C1DB21EEC00AA764E /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D3B1DB21EEC00AA764E /* Network.m */; };
 		79AD2D401DB22F6700AA764E /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D3F1DB22F6700AA764E /* Album.m */; };
 		79AD2D431DB22F7700AA764E /* Artists.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AD2D421DB22F7700AA764E /* Artists.m */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		5B14C3EE8A752BDD1E823C6B /* Pods-SpotifyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpotifyDemo/Pods-SpotifyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		79A2B8DF1DB48E2800BD709C /* AlbumCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCollectionViewCell.h; sourceTree = "<group>"; };
+		79A2B8E01DB48E2800BD709C /* AlbumCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCollectionViewCell.m; sourceTree = "<group>"; };
 		79AD2D3A1DB21EEC00AA764E /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		79AD2D3B1DB21EEC00AA764E /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		79AD2D3D1DB2211B00AA764E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 			children = (
 				79C39B881DB4608100AA0A11 /* ArtistCollectionViewCell.h */,
 				79C39B891DB4608100AA0A11 /* ArtistCollectionViewCell.m */,
+				79A2B8DF1DB48E2800BD709C /* AlbumCollectionViewCell.h */,
+				79A2B8E01DB48E2800BD709C /* AlbumCollectionViewCell.m */,
 				A817FE221DB1BF7C00B728C4 /* Main.storyboard */,
 				A817FE271DB1BF7C00B728C4 /* LaunchScreen.storyboard */,
 			);
@@ -299,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A2B8E11DB48E2800BD709C /* AlbumCollectionViewCell.m in Sources */,
 				A817FE391DB219FE00B728C4 /* AlbumsViewController.m in Sources */,
 				A817FE1E1DB1BF7C00B728C4 /* AppDelegate.m in Sources */,
 				79AD2D431DB22F7700AA764E /* Artists.m in Sources */,
