@@ -71,12 +71,7 @@
 -(void)setupView {
     self.artistLabel.text = self.artist.name;
     NSMutableArray *mutableGenres= [self.artist.genres mutableCopy];
-    
-    //  more than 4 genre labels is too much for the screen
-    if (mutableGenres.count - 1 > 5) {
-        [mutableGenres removeObjectsInRange:NSMakeRange(4, mutableGenres.count - 1)];
-    }
-    
+
     self.genreLabel.text = [[mutableGenres componentsJoinedByString:@", " ] capitalizedString];
     NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
     [fmt setNumberStyle:NSNumberFormatterDecimalStyle]; // to get commas (or locale equivalent)
@@ -175,10 +170,14 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AlbumCollectionViewCell *cell = (AlbumCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"albumCell" forIndexPath:indexPath];
     
+    cell.userInteractionEnabled = NO;
+    cell.alpha = 0.0;
+    
     NSInteger index = indexPath.section * 2 + indexPath.row + 1;
     
     if (index < self.albums.count) {
-        
+        cell.userInteractionEnabled = YES;
+        cell.alpha = 1.0;
         Album *album = self.albums[index];
         cell.titleLabel.text = album.name;
         cell.albumArtImageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -200,7 +199,7 @@
     AlbumCollectionViewCell *cell = (AlbumCollectionViewCell*)[collectionView cellForItemAtIndexPath:indexPath];
     [self moveCollectionViewToShowAlbumTracks];
     
-    NSInteger index = indexPath.section * 2 + indexPath.row + 1;
+    NSInteger index = indexPath.section * 2 + indexPath.row;// + 1;
     Album *selectedAlbum = self.albums[index];
     [Album get:@[selectedAlbum.spotifyId] withCompletionHandler:^(NSMutableArray *albums, NSError *error) {
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -264,10 +263,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    self.isPlaying = YES;
+    [self.playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
     Track *selectedTrack = self.selectedAlbum.tracks[indexPath.row];
     [self playSongFromURLString:selectedTrack.previewUrl];
     self.playingTrackLabel.text = selectedTrack.name;
+    self.isPlaying = YES;
 }
 
 #pragma mark - Animation
@@ -278,9 +278,11 @@
 }
 - (IBAction)pause:(id)sender {
     if (self.isPlaying) {
+        self.isPlaying = NO;
         [self.songPlayer pause];
         [self.playButton setImage:[UIImage imageNamed:@"play2"] forState:UIControlStateNormal];
     } else {
+        self.isPlaying = YES;
         [self.songPlayer play];
         [self.playButton setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
     }

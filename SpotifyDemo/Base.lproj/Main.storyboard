@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AZE-EE-1sH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AZE-EE-1sH">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -294,7 +294,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fLR-ev-WOg" id="o1m-bV-8Ue">
-                                            <frame key="frameInset" width="375" height="56"/>
+                                            <frame key="frameInset" width="375" height="56.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" verticalCompressionResistancePriority="500" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-8h-Brn">
@@ -367,13 +367,13 @@
                                             <action selector="pause:" destination="ER7-Zc-RfG" eventType="touchUpInside" id="Dmm-kj-aPb"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Now Playing Preview:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptX-P4-FbF">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Now Playing:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptX-P4-FbF">
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Su-bX-9QJ">
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -404,7 +404,7 @@
                             <constraint firstItem="paL-XH-Nfp" firstAttribute="height" secondItem="qQ6-zu-ld6" secondAttribute="height" id="8MV-TI-JpV"/>
                             <constraint firstItem="HrX-bc-nsr" firstAttribute="top" secondItem="qQ6-zu-ld6" secondAttribute="bottom" id="D6Y-BI-ONe"/>
                             <constraint firstAttribute="trailing" secondItem="paL-XH-Nfp" secondAttribute="trailing" id="Dbm-sR-eI2"/>
-                            <constraint firstItem="coD-AR-adE" firstAttribute="top" secondItem="YzE-7f-5oZ" secondAttribute="bottom" constant="4" id="Ezc-Di-jgV"/>
+                            <constraint firstItem="coD-AR-adE" firstAttribute="top" secondItem="YzE-7f-5oZ" secondAttribute="bottom" constant="8" id="Ezc-Di-jgV"/>
                             <constraint firstItem="MdE-Cb-kGf" firstAttribute="top" secondItem="Z1d-gA-EiP" secondAttribute="bottom" constant="4" id="HCX-Uh-mWa"/>
                             <constraint firstItem="Eun-cj-Jwj" firstAttribute="top" secondItem="YzE-7f-5oZ" secondAttribute="bottom" constant="20" id="OAx-0p-vuY"/>
                             <constraint firstAttribute="trailing" secondItem="ess-G9-h1A" secondAttribute="trailing" id="OFv-Fn-W5a"/>

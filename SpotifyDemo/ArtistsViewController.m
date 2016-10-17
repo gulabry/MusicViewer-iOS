@@ -56,8 +56,13 @@
     
     NSInteger index = indexPath.section * 2 + indexPath.row + 1;
     
+    cell.userInteractionEnabled = NO;
+    cell.alpha = 0.0;
+    
     if (index < self.artists.count) {
         
+        cell.userInteractionEnabled = YES;
+        cell.alpha = 1.0;
         Artist *artist = self.artists[index];
         cell.nameLabel.text = artist.name;
         cell.genreLabel.text = [NSString stringWithFormat:@"%@", [artist.genres[0] capitalizedString]];
