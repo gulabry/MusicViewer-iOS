@@ -1,4 +1,4 @@
-# Top 20 - Spotify Music Viewer
+# Spotify Music Viewer
 
 <img src="Screenshots/artistView.png" width="275"/> <img src="Screenshots/albumView.png" width="275"/> <img src="Screenshots/allView.png" width="275"/>
 
